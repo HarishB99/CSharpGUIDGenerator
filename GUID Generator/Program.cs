@@ -10,6 +10,14 @@ namespace GUID_Generator
     {
         static void Main(string[] args)
         {
+            GenerateGUID();
+            Console.WriteLine("Please press 'Enter' to exit the program...");
+            Console.ReadKey();
+        }
+
+        static void GenerateGUID()
+        {
+            Console.WriteLine("GUID: " + System.Guid.NewGuid().ToString());
         }
     }
 }
